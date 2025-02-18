@@ -18,7 +18,7 @@ pipeline {
                 sh 'docker build -t myimage-${BUILD_NUMBER} .'
                 
                 // Run the Docker container
-                sh 'docker run -d -p 32552:80 --name my-container-${BUILD_NUMBER} myimage-${BUILD_NUMBER}'  // Added -d for detached mode
+                sh 'docker run -d -p 32553:80 --name my-container-${BUILD_NUMBER} myimage-${BUILD_NUMBER}'  // Added -d for detached mode
             }
         }
     }
