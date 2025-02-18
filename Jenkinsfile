@@ -17,7 +17,7 @@ pipeline {
                 // Build the Docker image
                 sh 'docker build -t myimage-${BUILD_NUMBER} .'
 
-                 sh"""
+                 sh """
 
 container=$(docker ps | grep 32533| cut -d " " -f 1)
 
