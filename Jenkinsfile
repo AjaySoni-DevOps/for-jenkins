@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'machine1'  // Specify your agent here
+        label 'machine1'  
     }
     stages {
         stage('Running stage 1 printing') {
